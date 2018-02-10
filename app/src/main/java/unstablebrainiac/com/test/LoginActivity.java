@@ -28,8 +28,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (email.equals("example@wncc-iitb.org") && password.equals("test")) {
                     Toast.makeText(getApplicationContext(), "Login Seccessful", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                    startActivity(intent);
+                    Intent myIntent = new Intent(LoginActivity.this, HomeActivity.class);
+                    startActivity(myIntent);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Invalid Credentials", Toast.LENGTH_LONG).show();
